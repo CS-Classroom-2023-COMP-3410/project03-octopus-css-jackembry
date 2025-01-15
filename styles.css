@@ -1,0 +1,249 @@
+/* External CSS file: styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #add8e6;
+    color: #333;
+}
+
+.highlight {
+    background-color: #add8e6; /* Light blue background */
+    padding: 0 4px; /* Add some padding around the word */
+    border-radius: 4px; /* Optional: round the edges slightly */
+}
+
+/* Header Section */
+#header {
+    background: linear-gradient(to right, #003366, #0099cc); /* Transition from deep sea blue to current blue */
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    border: 12px solid #add8e6; /* Light baby blue outline */
+    border-radius: 25px; /* Slightly round the corners */
+}
+
+#header h1 {
+    margin: 0; /* Remove default margin on h1 */
+    font-size: 1.5em; /* Adjust font size */
+    text-align: center;
+}
+
+#header p {
+    margin: 0; /* Remove default margin on p */
+    font-size: 0.7em; /* Adjust font size */
+    text-align: left;
+    padding-left: 20px; /* Move paragraph text to the right */
+}
+
+/* Main Content */
+#main-content {
+    padding: 20px 10px; /* Adjust padding to bring content closer to the border */
+    background-color: white;
+    border: 12px solid #add8e6; /* Light baby blue outline */
+    border-radius: 25px; /* Slightly round the corners */
+    margin: -10px auto; /* Center the border with the header border */
+}
+
+#main-content h2 {
+    color: #006699;
+    font-size: 1.1em; /* Largest subheading */
+    position: relative; /* Enable positioning for underline */
+}
+
+/* Teal underline for the first h2 in #main-content */
+#main-content > h2:first-of-type::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Position below text */
+    width: 30px; /* Length of the teal line */
+    height: 3px; /* Thickness of the teal line */
+    background-color: cyan; /* Color of the line */
+}
+
+#main-content h3 {
+    color: #006699;
+    font-size: 0.7em;
+}
+
+#main-content h4 {
+    color: #006699;
+    font-size: 0.6em;
+}
+
+#main-content h5 {
+    color: #006699;
+    font-size: 0.4em;
+}
+
+#main-content h6 {
+    color: #006699;
+    font-size: 0.3em;
+}
+
+#main-content p {
+    color: #520099;
+    font-size: 0.57em;
+}
+
+#main-content ul {
+    color: #520099;
+    font-size: 0.57em;
+}
+
+#main-content ol {
+    color: #520099;
+    font-size: 0.57em;
+}
+
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #006699;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#quiz-section {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space the left and right content */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between columns */
+    background-color: #00FFFF; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Left Column */
+.quiz-left {
+    flex: 1; /* Take up one part of the space */
+    text-align: left; /* Align text and image to the left */
+    
+}
+
+.quiz-left img {
+    display: block;
+    margin-top: 30px; /* Add spacing between the heading and image */
+    margin-left: 20px; /* Move the image and border to the right */
+    border: 4px solid purple; /* Add a purple border */
+    width: 60px; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.quiz-right {
+    text-align: left; /* Align the form content to the left */
+    font-size: 0.7em; /* Scale down all text within the right column */
+    color: #520099;
+}
+
+form label {
+    display: block;
+    margin: 5px 0 3px; /* Reduce margin for compactness */
+    font-size: inherit; /* Use the smaller font size from .quiz-right */
+}
+
+form input[type="text"] {
+    width: 100%; /* Full width for text input */
+    padding: 6px; /* Reduce padding for smaller inputs */
+    border: 1px solid #005580;
+    border-radius: 4px;
+    margin-bottom: 8px; /* Adjust margin spacing */
+    font-size: inherit; /* Use the smaller font size from .quiz-right */
+}
+
+form input[type="submit"] {
+    background-color: #006699;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduce padding for smaller button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: inherit; /* Use the smaller font size from .quiz-right */
+}
+
+form input[type="submit"]:hover {
+    background-color: #005580;
+}
+
+/* Table Section */
+#species-table {
+    background-color: #add8e6;
+    border: 12px solid #add8e6; /* Light baby blue outline */
+    border-radius: 25px; /* Slightly round the corners */
+    padding: 20px; /* Add padding inside the border */
+    padding-top: 1px; /* Adjust padding to move the h2 title higher */
+    max-width: 800px; /* Limit the width for consistent layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual appeal */
+}
+
+#species-table h2 {
+    color: #006699;
+    position: relative; /* Enable positioning for underline */
+    font-size: 0.9em;
+}
+
+#species-table h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Position below text */
+    width: 30px; /* Length of the teal line */
+    height: 3px; /* Thickness of the teal line */
+    background-color: cyan; /* Color of the line */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.5em;
+}
+
+th, td {
+    border: 1px solid #003366;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #808080;
+    color: white; /* Set text color to white */
+}
+
+tr {
+    color: #520099;
+}
+
+tr:last-child td {
+    background-color: white; /* White for the last row */
+}
+
+/* Footer */
+#footer {
+    background-color: #003366; /* Light blue background */
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    font-size: 0.56em;
+    padding: 20px; /* Add padding inside the footer */
+    padding-top: 5px;
+    border: 12px solid #add8e6; /* Light baby blue border */
+    border-radius: 25px; /* Rounded corners */
+    margin: -10px auto; /* Center the border with the header border */
+}
